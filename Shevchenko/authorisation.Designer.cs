@@ -143,11 +143,13 @@ namespace Shevchenko
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Location = new System.Drawing.Point(405, 160);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(240, 140);
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // button2
             // 
@@ -160,6 +162,7 @@ namespace Shevchenko
             this.button2.TabIndex = 12;
             this.button2.Text = "Подтвердить";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox3
             // 
@@ -174,7 +177,7 @@ namespace Shevchenko
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.ClientSize = new System.Drawing.Size(734, 511);
+            this.ClientSize = new System.Drawing.Size(904, 511);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox2);
@@ -188,7 +191,7 @@ namespace Shevchenko
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "authorisation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
